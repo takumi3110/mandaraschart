@@ -15,7 +15,7 @@ class MandaraArtApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: StartPage(),
+      home: const StartPage(),
     );
   }
 }
@@ -38,10 +38,10 @@ class StartPage extends StatelessWidget {
                   fontFamily: 'NovaMono for Powerline'),
             ),
             const SizedBox(
-              height: 100,
+              height: 50,
             ),
             SizedBox(
-                width: 150,
+                width: 140,
                 height: 70,
                 child: ElevatedButton(
                   onPressed: () {
@@ -61,17 +61,884 @@ class StartPage extends StatelessWidget {
 }
 
 class TopPage extends StatelessWidget {
+  const TopPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            SizedBox(
-              width: 50,
-              height: 50,
-            )
-          ],
+        body: Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        children: <Widget>[
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(
+            width: 5,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.pink[400],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(
+            width: 5,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.yellow[700],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[100],
+                                border:
+                                    Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
     ));
   }
 }
